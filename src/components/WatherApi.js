@@ -6,7 +6,7 @@ const WatherApi = () => {
     const color = ["#B3CFDD"]
     const [ climate, setClimate ] = useState({});
     const [ temp, setTemp ] = useState(0)
-    console.log(climate);
+    console.log(climate); 
     const success = position => {   
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
