@@ -10,8 +10,7 @@ const WatherApi = () => {
     const success = position => {   
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
-        axios
-            .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=adc32b7dca3ab0c562154e8cbded87a3`) 
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=adc32b7dca3ab0c562154e8cbded87a3`) 
             .then(res => {
                 setClimate(res.data) 
                 setTemp(res.data?.main.temp)
@@ -49,8 +48,6 @@ const WatherApi = () => {
     },[])
     
     document.body.style = `background: ${color}`
-
-    console.log(climate)
 
     return (
         <div className='card'>
