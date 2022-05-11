@@ -1,6 +1,7 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-
+import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react'; 
 const WatherApi = () => {
 
     const color = ["#B3CFDD"]
