@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react'; 
-const WatherApi = () => {
+const WatherApi = () => { 
 
     const color = ["#B3CFDD"]
     const [ climate, setClimate ] = useState({});
