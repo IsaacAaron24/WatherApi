@@ -4,7 +4,7 @@ import WatherApi from './components/WatherApi';
 function App() {
   return (
     <div className="App">
-      <WatherApi/>   
+      <WatherApi/>    
     </div>
   );
 }
