@@ -8,7 +8,7 @@ const WatherApi = () => {
     const [ climate, setClimate ] = useState({});
     const [ temp, setTemp ] = useState(0)
     console.log(climate); 
-    const success = position => {    
+    const success = position => {      
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
         axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=adc32b7dca3ab0c562154e8cbded87a3`) 
